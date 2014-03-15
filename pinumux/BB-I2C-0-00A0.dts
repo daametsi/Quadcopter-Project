@@ -1,0 +1,24 @@
+/dts-v1/;
+/plugin/;
+ 
+/ {
+    compatible = "ti,beaglebone", "ti,beaglebone-black";
+ 
+    /* identification */
+    part-number = "BB-I20-0";
+
+    /* enable I2C mode */
+    exclusive-use="i2c";
+ 
+    fragment@0 {
+        target = <&am33xx_pinmux>;
+        __overlay__ {
+            i2c_0_pins: pinmux_i2c_0_pins{
+                pinctrl-single,pins = <
+                    0x15c 0x02  /* P9_17, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE2 */
+                    0x158 0x02  /* P9_18, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE2 */
+                >;
+            };
+        };
+    };
+};

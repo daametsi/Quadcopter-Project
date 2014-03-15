@@ -1,0 +1,84 @@
+/dts-v1/;
+/plugin/;
+ 
+/ {
+    compatible = "ti,beaglebone", "ti,beaglebone-black";
+ 
+    /* identification */
+    part-number = "BB-GPIO-DATA";
+ 
+    fragment@0 {
+        target = <&am33xx_pinmux>;
+        __overlay__ {
+            pruicss_stepper_pins: pinmux_pruicss_stepper_pins{
+                pinctrl-single,pins = <
+                    0x0e0 0x07  /* P8_27, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE7 */
+                    0x0e8 0x07  /* P8_28, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE7 */
+                    /*RRST*/
+                    0x0e4 0x07  /* P8_29, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE7 */
+                    /*WRST*/
+                    0x0ec 0x07  /* P8_30, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE7 */
+                    /*OE*/
+                    0x0d8 0x07  /* P8_31, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE7 */
+                    /*WR*/
+                    0x0dc 0x07  /* P8_32, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE7 */
+                    /*RCK*/
+                    0x0d4 0x07  /* P8_33, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE7 */
+                    /*STROBE*/
+                    0x0cc 0x07  /* P8_34, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE7 */
+                    /*PWDN*/
+                    0x0d0 0x07  /* P8_35, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE7 */
+                    /*RESET*/
+                    0x0c8 0x07  /* P8_36, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE7 */
+                    /*D0-D7*/
+                    0x0c0 0x27  /* P8_37, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE7 */
+                    0x0c4 0x27  /* P8_38, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE7 */
+                    0x0b8 0x27  /* P8_39, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE7 */
+                    0x0bc 0x27  /* P8_40, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE7 */
+                    0x0b0 0x27  /* P8_41, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE7 */
+                    0x0b4 0x27  /* P8_42, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE7 */
+                    0x0a8 0x27  /* P8_43, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE7 */
+                    0x0ac 0x27  /* P8_44, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE7 */
+                    /*HREF*/
+                    0x0a0 0x07  /* P8_45, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE7 */
+                    /*VSYNC*/
+                    0x0a4 0x07  /* P8_46, SLEWCTRL_FAST | INPUT_PULLDOWN | MODE7 */
+                >;
+            };
+        };
+    };
+
+    /*fragment@1{
+        target = <&pruss>;
+        __overlay__{
+            status = "okay";
+            pinctrl-names = "default";
+            pinctrl-0       = <&pruicss_stepper_pins>
+            stepper_x{
+                pin-names     = "Replic:pru-step_x", "Replic:pru-dir_x";        
+                gpios         = <&gpio1 27 0
+                                &gpio2 29 0>; 
+            };            
+            stepper_y{
+                pin-names     = "Replic:pru-step_y", "Replic:pru-dir_y";        
+                gpios         =<&gpio2 12 0
+                               &gpio1 22 0>; 
+            };
+            stepper_z{
+                pin-names     = "Replic:pru-step_z", "Replic:pru-dir_z";        
+                gpios         = <&gpio1 23 0
+                                &gpio1 26 0>; 
+            };
+            stepper_ext_1{
+                pin-names     = "Replic:pru-step_ext_1", "Replic:pru-dir_ext_1";        
+                gpios         = <&gpio2 28 0
+                                &gpio2 15 0>; 
+            };
+            stepper_ext_2{
+                pin-names     = "Replic:pru-step_ext_2", "Replic:pru-dir_ext_2";        
+                gpios         = <&gpio2 13 0
+                                &gpio2 14 0>;
+            };
+        };
+    };*/
+};
