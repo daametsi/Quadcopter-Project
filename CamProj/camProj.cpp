@@ -102,8 +102,16 @@ int main(int argc, char** argv)
 
 		// Clear VSYNC
 		//camera.gpio0->setBit(BIT_OE,LOW);
-		camera.gpio2->setBit(BIT_D06, HIGH);
-
+		//camera.gpio2->setBit(BIT_D06, HIGH);
+		printf("%d, %d\b", camera.gpio2->getBit(BIT_RRST),camera.gpio2->getBit(BIT_WRST));
+		printf("%d, %d\b", camera.gpio2->getBit(BIT_OE),camera.gpio2->getBit(BIT_LR));
+		printf("%d, %d\b", camera.gpio2->getBit(BIT_RCK),camera.gpio2->getBit(BIT_STR));
+		printf("%d, %d\b", camera.gpio2->getBit(BIT_PWDN),camera.gpio2->getBit(BIT_RST));
+		printf("%d, %d\b", camera.gpio2->getBit(BIT_D00),camera.gpio2->getBit(BIT_D01));
+		printf("%d, %d\b", camera.gpio2->getBit(BIT_D02),camera.gpio2->getBit(BIT_D03));
+		printf("%d, %d\b", camera.gpio2->getBit(BIT_D04),camera.gpio2->getBit(BIT_D05));
+		printf("%d, %d\b", camera.gpio2->getBit(BIT_D06),camera.gpio2->getBit(BIT_D07));
+		printf("%d, %d\b", camera.gpio2->getBit(BIT_HREF),camera.gpio2->getBit(BIT_VSYNC));
 	}
 	return 0;
 }
