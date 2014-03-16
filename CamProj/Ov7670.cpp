@@ -31,11 +31,16 @@ Ov7670::Ov7670() {
 	// initialize camera for reading
 	gpio0->setBit(BIT_PWDN, 0);
 	gpio0->setBit(BIT_OE, 0);
+	gpio0->setBit(BIT_WE, 1);
 
 	// reseting..
 	gpio2->setBit(BIT_RST, 0);
+	gpio2->setBit(BIT_RRST, 0);
+	gpio2->setBit(BIT_WRST, 0);
 	usleep(1000*200);
 	gpio2->setBit(BIT_RST, 1);
+	gpio2->setBit(BIT_RRST, 1);
+	gpio2->setBit(BIT_WRST, 1);
 	usleep(1000*200);
 }
 
@@ -193,7 +198,9 @@ uint8_t Ov7670::captured() {
 }
 
 uint8_t Ov7670::getData(){
-	return	gpio2->getBit(BIT_D00) + 
+	uint8_t b;
+	READ_CLOCK_HIGH;
+	b = gpio2->getBit(BIT_D00) + 
 			(gpio2->getBit(BIT_D01) << 1) +
 			(gpio2->getBit(BIT_D02) << 2) +
 			(gpio2->getBit(BIT_D03) << 3) +
@@ -201,6 +208,8 @@ uint8_t Ov7670::getData(){
 			(gpio2->getBit(BIT_D05) << 5) +
 			(gpio2->getBit(BIT_D06) << 6) +
 			(gpio2->getBit(BIT_D07) << 7);
+	READ_CLOCK_LOW;
+	return b;
 }
 
 void Ov7670::io_setup()

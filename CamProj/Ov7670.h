@@ -72,8 +72,8 @@ private:
 	void io_setup();
 	void read_stop();
 	void capture_next();
-	uint8_t captured();
 	uint8_t getData();
+	uint8_t captured();
 	uint8_t transfer_regvals(struct regval_list *list);
 	uint8_t init_rgb444_qqvga();
 	uint8_t init_rgb555_qqvga();

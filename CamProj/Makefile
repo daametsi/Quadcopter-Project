@@ -70,9 +70,6 @@ all: camProj
 camProj:  camProj.o  SimpleGPIO.o GpioIntf.o I2CIntf.o Ov7670.o
 	$(CC) $(LDFLAGS) -o $@ $^ -lpthread -lncurses
 
-#commandReceive:   commandReceive.o XBee.o
-#	$(CC) $(LDFLAGS) -o $@ $^
-
 #
 # Objects
 #

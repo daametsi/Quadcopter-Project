@@ -2,7 +2,6 @@
 // daametsi
 
 #include <pthread.h>
-#include "Ov7670.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -19,6 +18,10 @@
 #include <time.h>
 #include <poll.h>
 #include <signal.h>
+#include <fstream>
+#include <iostream>
+#include "Image.h"
+#include "Ov7670.h"
 #include "SimpleGPIO.h"
 #include "GpioIntf.h"
 #include "GPIO_CONST.h"
@@ -27,8 +30,15 @@
 void cameraReadImageStart();
 void cameraReadImageStop();
 void* updateOsc(void* args);
+void* getPinState(void* args);
 void* getUART(void* argus);
 int setPWM(int gpioBank, int setPin);
+int printPinState();
+void cameraReadImageStart();
+void href_handler();
+void vsync_handler();
+void cameraBufferFull(uint8_t * buffer);
+
 
 
 typedef struct OscThread{
@@ -41,6 +51,12 @@ typedef struct UARTThread{
 	pthread_t tid;
 	char c;
 } UARTThread;
+
+typedef struct PinState{
+	pthread_t tid;
+} PinState;
+
+using namespace std;
 
 
  /****************************************************************
