@@ -2,16 +2,14 @@ The following projects will be comprised into a single project
 which controls and interfaces with systems incorporated on
 a quadcopter.
 
-/****************************************************************
  * AccelProj(uses MPU6050)
- ****************************************************************/
+ * 
 INTERFACE TECNOLOGIES: I2C
 Demonstrates the ability to interface with the accelerometer
 module by initializing and pulling values from the registers.
 
-/****************************************************************
  * CamProj(uses OV7670 w/ FIFO)
- ****************************************************************/
+ * 
 INTERFACE TECHNOLOGIES: I2C
 Demonstrates the ability to interface with the camera module by
 initializing camera modes and constructing a picture from the data
