@@ -160,6 +160,7 @@ uint8_t Ov7670::reset(uint8_t mode) {
 }
 
 void Ov7670::vsync_handler() {
+	//printf("cam: handling vsync\n");
 	if (capture_request) {
 		WRITE_RESET;
 		WRITE_ENABLE;
@@ -251,6 +252,7 @@ void Ov7670::read_stop() {
 }
 
 void Ov7670::capture_image() {
+	printf("capturing image..\n");
   capture_next();
   while(captured() == false);
   usleep(10);

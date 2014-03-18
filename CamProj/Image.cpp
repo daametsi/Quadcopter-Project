@@ -6,7 +6,6 @@
  */
 
 #include "Image.h"
-#include "Ov7670.h"
 
 Image::Image(Ov7670 *c) {
 	camera = c;
@@ -29,9 +28,9 @@ Image::Image(Ov7670 *c) {
 
 void Image::displayRgbImageNr(uint16_t nr) {
 	displayRgbImage(nrToPictureString(0, nr));
-}*/
+}
 
-/*bool Image::displayBitmap(const char * filename) {
+bool Image::displayBitmap(const char * filename) {
 	uint16_t word;
 	uint32_t dword;
 	uint32_t bmpImageoffset, rowSize;
@@ -150,11 +149,11 @@ void Image::displayRgbImageNr(uint16_t nr) {
 	error:
 	file.close();
 	return false;
-}*/
+}
 
 bool Image::displayBitmapNr(uint16_t nr) {
 	return displayBitmap(nrToPictureString(1, nr));
-}
+}*/
 
 char * Image::nrToPictureString(uint8_t dir, uint16_t nr) {
 	static char buffer[20];

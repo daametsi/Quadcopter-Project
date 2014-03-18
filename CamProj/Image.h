@@ -20,7 +20,7 @@ public:
 	//void displayRgbImageNr(uint16_t nr);
 
 	//bool displayBitmap(const char *);
-	bool displayBitmapNr(uint16_t nr);
+	//bool displayBitmapNr(uint16_t nr);
 
 	char * nrToPictureString(uint8_t dir, uint16_t nr);
 

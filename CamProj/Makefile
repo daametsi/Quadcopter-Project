@@ -53,7 +53,7 @@ CC := g++
 CFLAGS := -g
 LINKER_FLAGS := -lstdc++
 SENDOBJECTS= SimpleGPIO.o
-DEPS= camProj.h SimpleGPIO.h GpioIntf.h GPIO_CONST.h I2CIntf.h Ov7670.h camera_config.h fifo.h
+DEPS= camProj.h SimpleGPIO.h GpioIntf.h GPIO_CONST.h I2CIntf.h Ov7670.h camera_config.h fifo.h Image.h
 
 # -----------------------
 # ------ make all -------
@@ -67,7 +67,7 @@ DEPS= camProj.h SimpleGPIO.h GpioIntf.h GPIO_CONST.h I2CIntf.h Ov7670.h camera_c
 
 all: camProj
 
-camProj:  camProj.o  SimpleGPIO.o GpioIntf.o I2CIntf.o Ov7670.o
+camProj:  camProj.o  SimpleGPIO.o GpioIntf.o I2CIntf.o Ov7670.o Image.o
 	$(CC) $(LDFLAGS) -o $@ $^ -lpthread -lncurses
 
 #
