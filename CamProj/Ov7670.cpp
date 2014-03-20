@@ -113,14 +113,14 @@ void Ov7670::init() {
 	//    while (1);
 	//}
 	//printf("%X\n", (unsigned int) camI2CIntf->readData(0x09));
-	camI2CIntf->writeData(REG_COM7, 0x80); /* reset to default values */
+	//camI2CIntf->writeData(REG_COM7, 0x80); /* reset to default values */
 	//camI2CIntf->writeData(REG_CLKRC, 0x80);
 	//camI2CIntf->writeData(REG_COM11, 0x0A);
 	//camI2CIntf->writeData(REG_TSLB, 0x04);
 	//camI2CIntf->writeData(REG_TSLB, 0x04);
 	
 	// set MODE to YUV
-	//init_success = reset(MODE_YUV);
+	init_success = reset(MODE_YUV);
 }
 
 /**
