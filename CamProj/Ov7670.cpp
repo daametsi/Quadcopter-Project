@@ -120,7 +120,7 @@ void Ov7670::init() {
 	//camI2CIntf->writeData(REG_TSLB, 0x04);
 	
 	// set MODE to YUV
-	init_success = reset(MODE_YUV);
+	//init_success = reset(MODE_YUV);
 }
 
 /**
