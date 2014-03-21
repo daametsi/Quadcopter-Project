@@ -1,0 +1,260 @@
+# EESchema Netlist Version 1.1 created  2013/1/17 19:48:45
+(
+ ( /50F63C9B LED-0603 D1 LED
+  ( 1 N-000011 )
+  ( 2 GND )
+ )
+ ( /50F63CC5 LED-0603 D2 LED
+  ( 1 N-000008 )
+  ( 2 GND )
+ )
+ ( /50F2D16D PIN_ARRAY_4x1 I1 I2C
+  ( 1 N-000064 )
+  ( 2 N-000060 )
+  ( 3 N-000084 )
+  ( 4 GND )
+ )
+ ( /50F2CF68 PIN_ARRAY_2X1 J1 CONN_2
+  ( 1 /UJ1 )
+  ( 2 +5V )
+ )
+ ( /50F2D99E PIN_ARRAY_2X1 J2 CONN_2
+  ( 1 /UJ7 )
+  ( 2 +5V )
+ )
+ ( /50F2D923 PIN_ARRAY_2X1 J3 CONN_2
+  ( 1 /UJ2 )
+  ( 2 +5V )
+ )
+ ( /50F2D995 PIN_ARRAY_2X1 J4 CONN_2
+  ( 1 /UJ8 )
+  ( 2 +5V )
+ )
+ ( /50F63B40 PIN_ARRAY_2X1 J5 CONN_2
+  ( 1 /UJ3 )
+  ( 2 +5V )
+ )
+ ( /50F63B9D PIN_ARRAY_2X1 J6 CONN_2
+  ( 1 /UJ6 )
+  ( 2 +5V )
+ )
+ ( /50F63B3D PIN_ARRAY_2X1 J7 CONN_2
+  ( 1 /UJ4 )
+  ( 2 +5V )
+ )
+ ( /50F63B9A PIN_ARRAY_2X1 J8 CONN_2
+  ( 1 /UJ5 )
+  ( 2 +5V )
+ )
+ ( /5033916D BB_Expansion P1 EXPANSION8
+  ( 1 GND )
+  ( 2 GND )
+  ( 3 N-000024 )
+  ( 4 N-000011 )
+  ( 5 N-000075 )
+  ( 6 N-000008 )
+  ( 7 ? )
+  ( 8 ? )
+  ( 9 ? )
+  ( 10 ? )
+  ( 11 ? )
+  ( 12 ? )
+  ( 13 ? )
+  ( 14 ? )
+  ( 15 ? )
+  ( 16 ? )
+  ( 17 ? )
+  ( 18 ? )
+  ( 19 ? )
+  ( 20 ? )
+  ( 21 ? )
+  ( 22 ? )
+  ( 23 ? )
+  ( 24 ? )
+  ( 25 ? )
+  ( 26 ? )
+  ( 27 N-000058 )
+  ( 28 N-000005 )
+  ( 29 N-000061 )
+  ( 30 N-000017 )
+  ( 31 ? )
+  ( 32 ? )
+  ( 33 ? )
+  ( 34 ? )
+  ( 35 ? )
+  ( 36 ? )
+  ( 37 ? )
+  ( 38 ? )
+  ( 39 N-000007 )
+  ( 40 N-000006 )
+  ( 41 N-000013 )
+  ( 42 N-000054 )
+  ( 43 ? )
+  ( 44 ? )
+  ( 45 ? )
+  ( 46 ? )
+ )
+ ( /50339174 BB_Expansion P2 EXPANSION9
+  ( 1 GND )
+  ( 2 GND )
+  ( 3 +3.3V )
+  ( 4 +3.3V )
+  ( 5 ? )
+  ( 6 +5V )
+  ( 7 ? )
+  ( 8 ? )
+  ( 9 ? )
+  ( 10 ? )
+  ( 11 ? )
+  ( 12 ? )
+  ( 13 ? )
+  ( 14 ? )
+  ( 15 N-000089 )
+  ( 16 N-000064 )
+  ( 17 ? )
+  ( 18 ? )
+  ( 19 N-000060 )
+  ( 20 N-000084 )
+  ( 21 N-000081 )
+  ( 22 N-000078 )
+  ( 23 ? )
+  ( 24 ? )
+  ( 25 N-000067 )
+  ( 26 ? )
+  ( 27 N-000002 )
+  ( 28 N-000087 )
+  ( 29 N-000026 )
+  ( 30 N-000088 )
+  ( 31 N-000010 )
+  ( 32 ? )
+  ( 33 ? )
+  ( 34 ? )
+  ( 35 ? )
+  ( 36 ? )
+  ( 37 ? )
+  ( 38 ? )
+  ( 39 ? )
+  ( 40 ? )
+  ( 41 ? )
+  ( 42 ? )
+  ( 43 ? )
+  ( 44 ? )
+  ( 45 ? )
+  ( 46 ? )
+ )
+ ( /50F8A986 PIN_ARRAY_2X1 P3 CONN_2
+  ( 1 +3.3V )
+  ( 2 GND )
+ )
+ ( /50F8A98C PIN_ARRAY_2X1 P4 CONN_2
+  ( 1 +5V )
+  ( 2 GND )
+ )
+ ( /50F2DA51 PIN_ARRAY_3X1 Rx1 JR_CONN
+  ( 1 GND )
+  ( 2 +5V )
+  ( 3 N-000067 )
+ )
+ ( /50F2DB09 PIN_ARRAY_3X1 Rx2 JR_CONN
+  ( 1 GND )
+  ( 2 +5V )
+  ( 3 N-000002 )
+ )
+ ( /50F2DB5C PIN_ARRAY_3X1 Rx3 JR_CONN
+  ( 1 GND )
+  ( 2 +5V )
+  ( 3 N-000087 )
+ )
+ ( /50F2DB2A PIN_ARRAY_3X1 Rx4 JR_CONN
+  ( 1 GND )
+  ( 2 +5V )
+  ( 3 N-000026 )
+ )
+ ( /50F63A83 PIN_ARRAY_3X1 Rx5 JR_CONN
+  ( 1 GND )
+  ( 2 +5V )
+  ( 3 N-000088 )
+ )
+ ( /50F63B18 PIN_ARRAY_3X1 Rx6 JR_CONN
+  ( 1 GND )
+  ( 2 +5V )
+  ( 3 N-000010 )
+ )
+ ( /50F63D45 SW_PUSH_SMALL SW1 SW_PUSH_SMALL
+  ( 1 +3.3V )
+  ( 2 N-000075 )
+ )
+ ( /50F63D3C SW_PUSH_SMALL SW2 SW_PUSH_SMALL
+  ( 1 +3.3V )
+  ( 2 N-000024 )
+ )
+ ( /50F2CF43 PIN_ARRAY_3X1 U1 JR_CONN
+  ( 1 GND )
+  ( 2 /UJ1 )
+  ( 3 N-000058 )
+ )
+ ( /50F2D99F PIN_ARRAY_3X1 U2 JR_CONN
+  ( 1 GND )
+  ( 2 /UJ7 )
+  ( 3 N-000005 )
+ )
+ ( /50F2D924 PIN_ARRAY_3X1 U3 JR_CONN
+  ( 1 GND )
+  ( 2 /UJ2 )
+  ( 3 N-000061 )
+ )
+ ( /50F2D994 PIN_ARRAY_3X1 U4 JR_CONN
+  ( 1 GND )
+  ( 2 /UJ8 )
+  ( 3 N-000017 )
+ )
+ ( /50F63B41 PIN_ARRAY_3X1 U5 JR_CONN
+  ( 1 GND )
+  ( 2 /UJ3 )
+  ( 3 N-000007 )
+ )
+ ( /50F63B9E PIN_ARRAY_3X1 U6 JR_CONN
+  ( 1 GND )
+  ( 2 /UJ6 )
+  ( 3 N-000006 )
+ )
+ ( /50F63B3C PIN_ARRAY_3X1 U7 JR_CONN
+  ( 1 GND )
+  ( 2 /UJ4 )
+  ( 3 N-000013 )
+ )
+ ( /50F63B99 PIN_ARRAY_3X1 U8 JR_CONN
+  ( 1 GND )
+  ( 2 /UJ5 )
+  ( 3 N-000054 )
+ )
+ ( /50F63EC7 zigbee Z1 ZIGBEE
+  ( 1 +3.3V )
+  ( 2 N-000078 )
+  ( 3 N-000081 )
+  ( 5 N-000089 )
+  ( 10 GND )
+ )
+)
+*
+{ Allowed footprints by component:
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D2
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$endfootprintlist
+}

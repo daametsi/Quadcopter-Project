@@ -1,0 +1,11 @@
+eeschema (2012-01-19 BZR 3256)-stable  >> Creation date: 2012/8/17 8:13:44
+
+#元件 ( 顺序 = 索引 )
+| BB1        BEAGLEBONE  
+#元件列表结束
+
+#元件 ( 顺序 = 数值 )
+| BEAGLEBONE   BB1       
+#元件列表结束
+
+#列表结束

@@ -1,0 +1,8 @@
+Basic Idea:
+	http://beaglebone.cameon.net/home/pin-muxing
+
+Permanent Change(modifying dts):
+	http://hipstercircuits.com/beaglebone-black-gpio-mux-for-pru-with-device-tree-overlay/
+
+Additional Examples:
+	http://wind.cs.purdue.edu/doc/beaglebone_ubuntu.html#sec4
