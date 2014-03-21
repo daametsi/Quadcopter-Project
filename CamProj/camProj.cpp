@@ -91,8 +91,8 @@ void* getPinState(void* argus){
 
 void* updateOsc(void* argus){
 	while(1){
-		camera.gpio0->setBit(BIT_RCK,1);
-		camera.gpio0->setBit(BIT_RCK,0);
+		//camera.gpio0->setBit(BIT_RCK,1);
+		//camera.gpio0->setBit(BIT_RCK,0);
 	}
 	return null;
 }
