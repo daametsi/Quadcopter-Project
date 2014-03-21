@@ -30,8 +30,8 @@ Ov7670::Ov7670() {
 
 	// initialize camera for reading
 	gpio0->setBit(BIT_PWDN, 0);
-	gpio0->setBit(BIT_OE, 0);
-	gpio0->setBit(BIT_WE, 1);
+	gpio0->setBit(BIT_OE, 1);
+	gpio0->setBit(BIT_WE, 0);
 
 	// reseting..
 	gpio2->setBit(BIT_RST, 0);
