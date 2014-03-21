@@ -26,6 +26,7 @@ Directions:
 
 1. Disable HDMI on the capemanager
  For this project HDMI is uneeded and currently used as a partial header for the OV7670 camera for debugging convience etc.
+
   I. locate uEnv.txt
     enter 'vim /boot/uEnv.txt'
 
