@@ -35,6 +35,6 @@ Directions:
       
   III. verify
     enter 'cat /sys/devices/bone_capemgr.*/slots'
-    all disabled devices should be missing an L in the follow sequence "P-O-L" and should appear something like this "P-O--"
+    all disabled devices should be missing an L in the following sequence "P-O-L" and should appear something like this "P-O--"
 
 2. Make and run program
