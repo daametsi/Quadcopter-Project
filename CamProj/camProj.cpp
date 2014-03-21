@@ -70,7 +70,7 @@ int setPWM(int gpioBank, int setPin){
 int printPinState(){
 	//cameraReadImageStart();
 	//printf("databus value: %d\r",camera.getData());
-	printf("HREF: %d", camera.gpio2->getBit(BIT_HREF));
+	printf("HREF: %d\n", camera.gpio2->getBit(BIT_HREF));
 	//printf("RRST: %d WRST: %d OE: %d, WE: %d RCK: %d, STR: %d PWDN: %d, RST: %d D00: %d, D01: %d D02: %d, D03: %d D04: %d, D05: %d D06: %d, D07: %d HREF: %d, VSYNC: %d\r", camera.gpio2->getBit(BIT_RRST),camera.gpio2->getBit(BIT_WRST), camera.gpio0->getBit(BIT_OE),camera.gpio0->getBit(BIT_WE), camera.gpio0->getBit(BIT_RCK),camera.gpio2->getBit(BIT_STR), camera.gpio0->getBit(BIT_PWDN),camera.gpio2->getBit(BIT_RST), camera.gpio2->getBit(BIT_D00),camera.gpio2->getBit(BIT_D01), camera.gpio2->getBit(BIT_D02),camera.gpio2->getBit(BIT_D03), camera.gpio2->getBit(BIT_D04),camera.gpio2->getBit(BIT_D05), camera.gpio2->getBit(BIT_D06),camera.gpio2->getBit(BIT_D07), camera.gpio2->getBit(BIT_HREF),camera.gpio2->getBit(BIT_VSYNC));
 	return 1;
 }
