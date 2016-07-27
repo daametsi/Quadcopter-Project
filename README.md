@@ -1,16 +1,3 @@
-CREDITS:
-
-ADVISOR:
-DR. DAVID MUTCHLER-CSSE
-Contributed time and funds to assist project
-
-INFLUENCES:
-DR. MARK YODER-ECE
-Pivotal in development and advice with BeagleBone Black
-DR. JIAN JIAN SONG-ECE
-Assisted with anomalies in code and digital logic
-
-
 The following projects will be comprised into a single project
 which controls and interfaces with systems incorporated on
 a quadcopter.
